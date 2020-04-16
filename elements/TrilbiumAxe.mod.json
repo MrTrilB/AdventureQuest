@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "trilbiumaxe",
+    "customModelName": "Normal",
+    "name": "Trilbium Axe",
+    "creativeTab": {
+      "value": "CUSTOM:AdventureQuest"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 22,
+    "efficiency": 24.0,
+    "attackSpeed": 2.0,
+    "enchantability": 24,
+    "damageVsEntity": 45.0,
+    "usageCount": 16280,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      }
+    ]
+  }
+}

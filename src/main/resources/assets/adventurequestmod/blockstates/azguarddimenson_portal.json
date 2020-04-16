@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "adventurequestmod:azguarddimenson_portal_ew"
+    },
+    "axis=x": {
+      "model": "adventurequestmod:azguarddimenson_portal_ns"
+    },
+    "inventory": {
+      "model": "adventurequestmod:azguarddimenson_portal_ns"
+    }
+  }
+}

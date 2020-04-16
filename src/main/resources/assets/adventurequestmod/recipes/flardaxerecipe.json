@@ -1,0 +1,30 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "1": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "2": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:flardaxe",
+    "count": 1
+  }
+}

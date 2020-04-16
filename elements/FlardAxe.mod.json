@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "flard_axe",
+    "customModelName": "Normal",
+    "name": "Flard Axe",
+    "creativeTab": {
+      "value": "CUSTOM:AdventureQuest"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 21.0,
+    "attackSpeed": 2.0,
+    "enchantability": 112,
+    "damageVsEntity": 20.0,
+    "usageCount": 14595,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:FlardIngot"
+      }
+    ]
+  }
+}

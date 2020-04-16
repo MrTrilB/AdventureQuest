@@ -1,0 +1,36 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "1": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "2": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "3": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "5": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "6": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "8": {
+      "item": "adventurequestmod:trilbiumingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:trilbiumarmorlegs",
+    "count": 1
+  }
+}

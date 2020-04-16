@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      },
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      },
+      {
+        "value": "CUSTOM:TrilionAlloyRod"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrilionAlloyRod"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TrilbiumAxe"
+    },
+    "name": "trilbiumaxerecipe",
+    "namespace": "mod"
+  }
+}

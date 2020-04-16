@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "trilbiumsword",
+    "customModelName": "Normal",
+    "name": "Trilbium Sword",
+    "creativeTab": {
+      "value": "CUSTOM:AdventureQuest"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 20,
+    "efficiency": 24.0,
+    "attackSpeed": 4.0,
+    "enchantability": 140,
+    "damageVsEntity": 60.0,
+    "usageCount": 16280,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      }
+    ]
+  }
+}

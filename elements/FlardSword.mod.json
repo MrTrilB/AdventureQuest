@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "flard_sword",
+    "customModelName": "Normal",
+    "name": "Flard Sword",
+    "creativeTab": {
+      "value": "CUSTOM:AdventureQuest"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 21.0,
+    "attackSpeed": 4.0,
+    "enchantability": 112,
+    "damageVsEntity": 45.0,
+    "usageCount": 14595,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:FlardIngot"
+      }
+    ]
+  }
+}

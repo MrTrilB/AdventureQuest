@@ -1,0 +1,39 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "1": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "2": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "3": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "5": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "6": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "7": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "8": {
+      "item": "adventurequestmod:flardingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:azguardportalignitor",
+    "count": 1
+  }
+}

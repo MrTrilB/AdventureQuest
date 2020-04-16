@@ -1,0 +1,36 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "1": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "2": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "3": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "5": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "6": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "8": {
+      "item": "adventurequestmod:flardingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:flardarmorlegs",
+    "count": 1
+  }
+}

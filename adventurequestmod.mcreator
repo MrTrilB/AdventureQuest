@@ -1,0 +1,743 @@
+{
+  "id_map": {
+    "DIMENSION": 2,
+    "ENTITY": 3
+  },
+  "mod_elements": [
+    {
+      "name": "TrilbiumOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumOreBlock",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumIngot",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumOreSmelting",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumArmor",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "TrilbiumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumDust",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilionAlloyRod",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilionAlloyRodRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardOre",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardOreBlock",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardIngot",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardPickaxe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardAxe",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardSword",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardShovel",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardHoe",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardAxeRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardSwordRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardShovelRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardHoeRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardArmor",
+      "type": "armor",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "FlardArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardOreSmelting",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Azguard",
+      "type": "biome",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AzguardDimenson",
+      "type": "dimension",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      }
+    },
+    {
+      "name": "AzguardPortalIgnitor",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AzguardPortalIgnitorRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdventureQuest",
+      "type": "tab",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumOre",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumOreBlock",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumDust",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumOreSmelting",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumIngot",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsPickaxe",
+      "type": "tool",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsAxe",
+      "type": "tool",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsSword",
+      "type": "tool",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsShovel",
+      "type": "tool",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsHoe",
+      "type": "tool",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EnderiumToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FoobaredCreeper",
+      "type": "mob",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "purplecreeper"
+    },
+    {
+      "name": "TrilbiumBow",
+      "type": "gun",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3
+      }
+    },
+    {
+      "name": "TrilbiumBowRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HothDimension",
+      "type": "dimension",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 2
+      }
+    },
+    {
+      "name": "HothDimensionPortalIgnitor",
+      "type": "item",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HothDimensionPortalIgnitorRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardFule",
+      "type": "fuel",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FlardOreDust",
+      "type": "item",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_gb": {
+      "itemGroup.tabadventurequest": "Adventure Quest",
+      "item.enderiumtoolshoe.name": "EnderiumTools Hoe",
+      "item.enderiumtoolsaxe.name": "EnderiumTools Axe",
+      "item.flardarmorbody.name": "Flard Chestplate",
+      "item.trilionalloyrod.name": "Trilion Alloy Rod",
+      "item.trilbiumingot.name": "Trilbium",
+      "item.trilbiumpickaxe.name": "Trilbium Pickaxe",
+      "item.trilbiumshovel.name": "Trilbium Shovel",
+      "item.flardshovel.name": "Flard Shovel",
+      "tile.enderiumoreblock.name": "Block of Enderium",
+      "item.enderiumtoolssword.name": "EnderiumTools Sword",
+      "item.flardpickaxe.name": "Flard Pickaxe",
+      "tile.flardore.name": "Flard Ore",
+      "item.trilbiumarmorboots.name": "Trilbium Boots",
+      "tile.flardoreblock.name": "Block of Flard",
+      "item.flardsword.name": "Flard Sword",
+      "item.enderiumingot.name": "Enderium Ingot",
+      "item.trilbiumarmorhelmet.name": "Trilbium Helmet",
+      "tile.trilbiumore.name": "Trilbium Ore",
+      "item.flardarmorhelmet.name": "Flard Helmet",
+      "item.trilbiumbow.name": "Trilbium Bow",
+      "item.flardingot.name": "Flard Ingot",
+      "tile.trilbiumoreblock.name": "Block of Trilbium",
+      "item.trilbiumsword.name": "Trilbium Sword",
+      "item.trilbiumaxe.name": "Trilbium Axe",
+      "item.trilbiumhoe.name": "Trilbium Hoe",
+      "item.flardarmorboots.name": "Flard Boots",
+      "item.hothdimension.name": "Hoth Dimension Portal Igniter",
+      "item.enderiumtoolsshovel.name": "EnderiumTools Shovel",
+      "item.flardaxe.name": "Flard Axe",
+      "item.flardhoe.name": "Flard Hoe",
+      "item.trilbiumarmorlegs.name": "Trilbium Leggings",
+      "item.enderiumtoolspickaxe.name": "EnderiumTools Pickaxe",
+      "item.azguarddimenson.name": "Azguard Dimenson Portal Igniter",
+      "item.azguardportalignitor.name": "Azguard Portal Ignitor",
+      "entity.purplecreeper.name": "Purple Creeper",
+      "tile.enderiumore.name": "Enderium Ore",
+      "item.flardarmorlegs.name": "Flard Leggings",
+      "item.hothdimensionportalignitor.name": "Hoth Dimension Portal Ignitor",
+      "item.trilbiumdust.name": "Trilbium Dust",
+      "item.flardoredust.name": "Flard Ore Dust",
+      "item.trilbiumarmorbody.name": "Trilbium Chestplate",
+      "item.enderiumdust.name": "Enderium"
+    },
+    "en_us": {
+      "itemGroup.tabadventurequest": "Adventure Quest",
+      "item.enderiumtoolshoe.name": "Enderium Hoe",
+      "item.enderiumtoolsaxe.name": "Enderium Axe",
+      "item.flardarmorbody.name": "Flard Chestplate",
+      "item.trilionalloyrod.name": "Trilion Alloy Rod",
+      "item.trilbiumingot.name": "Trilbium Ingot",
+      "item.trilbiumpickaxe.name": "Trilbium Pickaxe",
+      "item.trilbiumshovel.name": "Trilbium Shovel",
+      "item.flardshovel.name": "Flard Shovel",
+      "tile.enderiumoreblock.name": "Block of Enderium",
+      "item.enderiumtoolssword.name": "Enderium Sword",
+      "item.flardpickaxe.name": "Flard Pickaxe",
+      "tile.flardore.name": "Flard Ore",
+      "item.trilbiumarmorboots.name": "Trilbium Boots",
+      "tile.flardoreblock.name": "Block of Flard",
+      "item.flardsword.name": "Flard Sword",
+      "item.enderiumingot.name": "Enderium Ingot",
+      "item.trilbiumarmorhelmet.name": "Trilbium Helmet",
+      "tile.trilbiumore.name": "Trilbium Ore",
+      "item.flardarmorhelmet.name": "Flard Helmet",
+      "item.trilbiumbow.name": "Trilbium Bow",
+      "item.flardingot.name": "Flard Ingot",
+      "tile.trilbiumoreblock.name": "Block of Trilbium",
+      "item.trilbiumsword.name": "Trilbium Sword",
+      "item.trilbiumaxe.name": "Trilbium Axe",
+      "item.trilbiumhoe.name": "Trilbium Hoe",
+      "item.flardarmorboots.name": "Flard Boots",
+      "item.hothdimension.name": "Hoth Dimension Portal Igniter",
+      "item.enderiumtoolsshovel.name": "Enderium Shovel",
+      "item.flardaxe.name": "Flard Axe",
+      "item.flardhoe.name": "Flard Hoe",
+      "item.trilbiumarmorlegs.name": "Trilbium Leggings",
+      "item.enderiumtoolspickaxe.name": "EnderiumTools Pickaxe",
+      "item.azguarddimenson.name": "Asgard Dimenson Portal Igniter",
+      "item.azguardportalignitor.name": "Asgard Portal Ignitor",
+      "entity.purplecreeper.name": "Purple Creeper",
+      "tile.enderiumore.name": "Enderium Ore",
+      "item.flardarmorlegs.name": "Flard Leggings",
+      "item.hothdimensionportalignitor.name": "Hoth Dimension Portal Ignitor",
+      "item.trilbiumdust.name": "Trilbium Dust",
+      "item.flardoredust.name": "Flard Ore Dust",
+      "item.trilbiumarmorbody.name": "Trilbium Chestplate",
+      "item.enderiumdust.name": "Enderium"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "adventurequestmod",
+    "modName": "AdventureQuest Mod",
+    "version": "1.0.0",
+    "author": "MrTrilB",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "server-icon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.12.2",
+    "credits": "All rights Reserved",
+    "modElementsPackage": "net.mcreator.adventurequestmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}

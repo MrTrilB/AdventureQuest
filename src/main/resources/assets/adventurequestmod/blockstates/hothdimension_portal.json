@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "adventurequestmod:hothdimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "adventurequestmod:hothdimension_portal_ns"
+    },
+    "inventory": {
+      "model": "adventurequestmod:hothdimension_portal_ns"
+    }
+  }
+}

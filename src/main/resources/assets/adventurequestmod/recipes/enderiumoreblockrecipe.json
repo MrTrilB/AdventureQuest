@@ -1,0 +1,42 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "1": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "2": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "3": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "4": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "5": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "6": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "7": {
+      "item": "adventurequestmod:enderiumingot"
+    },
+    "8": {
+      "item": "adventurequestmod:enderiumingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:enderiumoreblock",
+    "count": 1
+  }
+}

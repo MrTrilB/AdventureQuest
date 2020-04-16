@@ -1,0 +1,19 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 10.6,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:FlardOre"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:FlardIngot"
+    },
+    "name": "flardoresmelting",
+    "namespace": "mod"
+  }
+}

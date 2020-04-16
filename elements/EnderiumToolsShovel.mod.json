@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enderiumtools_shovel",
+    "customModelName": "Normal",
+    "name": "Enderium Shovel",
+    "creativeTab": {
+      "value": "CUSTOM:AdventureQuest"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 3,
+    "efficiency": 24.0,
+    "attackSpeed": 2.0,
+    "enchantability": 140,
+    "damageVsEntity": 20.0,
+    "usageCount": 16280,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      }
+    ]
+  }
+}

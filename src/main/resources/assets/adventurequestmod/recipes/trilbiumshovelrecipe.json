@@ -1,0 +1,24 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "1": {
+      "item": "adventurequestmod:trilionalloyrod"
+    },
+    "2": {
+      "item": "adventurequestmod:trilionalloyrod"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:trilbiumshovel",
+    "count": 1
+  }
+}

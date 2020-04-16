@@ -1,0 +1,42 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "1": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "2": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "3": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "4": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "5": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "6": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "7": {
+      "item": "adventurequestmod:flardingot"
+    },
+    "8": {
+      "item": "adventurequestmod:flardingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:flardoreblock",
+    "count": 1
+  }
+}

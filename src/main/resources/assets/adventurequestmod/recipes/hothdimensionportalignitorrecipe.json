@@ -1,0 +1,24 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:ice"
+    },
+    "4": {
+      "item": "adventurequestmod:trilionalloyrod"
+    },
+    "6": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:hothdimensionportalignitor",
+    "count": 1
+  }
+}

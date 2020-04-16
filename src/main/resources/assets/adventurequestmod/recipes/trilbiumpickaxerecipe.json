@@ -1,0 +1,30 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "1": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "2": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "4": {
+      "item": "adventurequestmod:trilionalloyrod"
+    },
+    "7": {
+      "item": "adventurequestmod:trilionalloyrod"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:trilbiumpickaxe",
+    "count": 1
+  }
+}

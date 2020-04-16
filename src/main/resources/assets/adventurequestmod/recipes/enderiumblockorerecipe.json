@@ -1,0 +1,13 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "adventurequestmod:enderiumoreblock"
+    }
+  ],
+  "result": {
+    "item": "adventurequestmod:enderiumingot",
+    "count": 9
+  }
+}

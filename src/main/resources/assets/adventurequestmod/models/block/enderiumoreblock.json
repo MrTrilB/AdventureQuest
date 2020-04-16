@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "adventurequestmod:blocks/enderium_ore_block",
+    "particle": "adventurequestmod:blocks/enderium_ore_block"
+  }
+}

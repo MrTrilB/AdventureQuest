@@ -1,0 +1,27 @@
+{
+  "group": "adventurequestmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "1": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "2": {
+      "item": "adventurequestmod:trilbiumingot"
+    },
+    "3": {
+      "item": "minecraft:string"
+    },
+    "5": {
+      "item": "adventurequestmod:trilbiumingot"
+    }
+  },
+  "result": {
+    "item": "adventurequestmod:trilbiumbow",
+    "count": 1
+  }
+}
