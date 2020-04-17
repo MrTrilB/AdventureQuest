@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "adventurequestmod:blocks/flard_ore_block",
-    "portal": "adventurequestmod:blocks/flard_ore_block"
+    "particle": "adventurequestmod:blocks/asgardportaltexture",
+    "portal": "adventurequestmod:blocks/asgardportaltexture"
   },
   "elements": [
     {
