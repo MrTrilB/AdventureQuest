@@ -1,6 +1,6 @@
 itemGroup.tabadventurequest=Adventure Quest
-item.enderiumtoolshoe.name=Enderium Hoe
 item.enderiumtoolsaxe.name=Enderium Axe
+item.enderiumtoolshoe.name=Enderium Hoe
 item.flardarmorbody.name=Flard Chestplate
 item.trilionalloyrod.name=Trilion Alloy Rod
 item.trilbiumingot.name=Trilbium Ingot
@@ -9,6 +9,7 @@ item.trilbiumshovel.name=Trilbium Shovel
 item.flardshovel.name=Flard Shovel
 tile.enderiumoreblock.name=Block of Enderium
 item.enderiumtoolssword.name=Enderium Sword
+tile.trilbiumandflardchest.name=Tril Biumand Flard Chest
 item.flardpickaxe.name=Flard Pickaxe
 tile.flardore.name=Flard Ore
 item.trilbiumarmorboots.name=Trilbium Boots

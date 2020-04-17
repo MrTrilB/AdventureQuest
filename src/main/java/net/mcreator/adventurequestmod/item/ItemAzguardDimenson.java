@@ -11,9 +11,9 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 
 import net.mcreator.adventurequestmod.world.WorldAzguardDimenson;
+import net.mcreator.adventurequestmod.creativetab.TabAdventureQuest;
 
 public class ItemAzguardDimenson extends Item {
 	@GameRegistry.ObjectHolder("adventurequestmod:azguarddimenson")
@@ -22,7 +22,7 @@ public class ItemAzguardDimenson extends Item {
 		super();
 		this.maxStackSize = 1;
 		setMaxDamage(64);
-		setCreativeTab(CreativeTabs.TOOLS);
+		setCreativeTab(TabAdventureQuest.tab);
 	}
 
 	@Override

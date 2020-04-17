@@ -717,7 +717,7 @@ public class WorldHothDimension extends ElementsAdventureQuestMod.ModElement {
 
 	public static class ChunkProviderModded implements IChunkGenerator {
 		private static final IBlockState STONE = Blocks.SNOW.getDefaultState();
-		private static final IBlockState STONE2 = Blocks.ICE.getDefaultState();
+		private static final IBlockState STONE2 = Blocks.GRASS.getDefaultState();
 		private static final IBlockState FLUID = Blocks.ICE.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
@@ -1066,7 +1066,9 @@ public class WorldHothDimension extends ElementsAdventureQuestMod.ModElement {
 	}
 
 	public static class GenLayerBiomesCustom extends GenLayer {
-		private Biome[] allowedBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("frozen_ocean")),};
+		private Biome[] allowedBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("frozen_ocean")),
+				Biome.REGISTRY.getObject(new ResourceLocation("ice_flats")), Biome.REGISTRY.getObject(new ResourceLocation("forest_hills")),
+				Biome.REGISTRY.getObject(new ResourceLocation("frozen_river")),};
 		public GenLayerBiomesCustom(long seed) {
 			super(seed);
 		}

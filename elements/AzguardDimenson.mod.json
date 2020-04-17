@@ -14,7 +14,7 @@
     },
     "igniterName": "Asgard Dimenson Portal Igniter",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:AdventureQuest"
     },
     "texture": "azguardportalignitor",
     "portalTexture": "flard_ore_block",

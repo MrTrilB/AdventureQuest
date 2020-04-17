@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "DIMENSION": 2,
-    "ENTITY": 3
+    "ENTITY": 3,
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -625,6 +625,22 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "TrilBiumandFlardChest",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrilbiumandFlardCrate",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -632,8 +648,8 @@
   "language_map": {
     "en_gb": {
       "itemGroup.tabadventurequest": "Adventure Quest",
-      "item.enderiumtoolshoe.name": "EnderiumTools Hoe",
       "item.enderiumtoolsaxe.name": "EnderiumTools Axe",
+      "item.enderiumtoolshoe.name": "EnderiumTools Hoe",
       "item.flardarmorbody.name": "Flard Chestplate",
       "item.trilionalloyrod.name": "Trilion Alloy Rod",
       "item.trilbiumingot.name": "Trilbium",
@@ -642,6 +658,7 @@
       "item.flardshovel.name": "Flard Shovel",
       "tile.enderiumoreblock.name": "Block of Enderium",
       "item.enderiumtoolssword.name": "EnderiumTools Sword",
+      "tile.trilbiumandflardchest.name": "Tril Biumand Flard Chest",
       "item.flardpickaxe.name": "Flard Pickaxe",
       "tile.flardore.name": "Flard Ore",
       "item.trilbiumarmorboots.name": "Trilbium Boots",
@@ -677,8 +694,8 @@
     },
     "en_us": {
       "itemGroup.tabadventurequest": "Adventure Quest",
-      "item.enderiumtoolshoe.name": "Enderium Hoe",
       "item.enderiumtoolsaxe.name": "Enderium Axe",
+      "item.enderiumtoolshoe.name": "Enderium Hoe",
       "item.flardarmorbody.name": "Flard Chestplate",
       "item.trilionalloyrod.name": "Trilion Alloy Rod",
       "item.trilbiumingot.name": "Trilbium Ingot",
@@ -687,6 +704,7 @@
       "item.flardshovel.name": "Flard Shovel",
       "tile.enderiumoreblock.name": "Block of Enderium",
       "item.enderiumtoolssword.name": "Enderium Sword",
+      "tile.trilbiumandflardchest.name": "Tril Biumand Flard Chest",
       "item.flardpickaxe.name": "Flard Pickaxe",
       "tile.flardore.name": "Flard Ore",
       "item.trilbiumarmorboots.name": "Trilbium Boots",

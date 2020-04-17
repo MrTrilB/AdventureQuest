@@ -22,6 +22,15 @@
     "biomesInDimension": [
       {
         "value": "frozen_ocean"
+      },
+      {
+        "value": "snowy_tundra"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "frozen_river"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -29,7 +38,7 @@
       "value": "Blocks.SNOW"
     },
     "secondaryFillerBlock": {
-      "value": "Blocks.ICE"
+      "value": "Blocks.GRASS"
     },
     "tertiaryFillerBlock": {
       "value": "Blocks.STONE#0"
