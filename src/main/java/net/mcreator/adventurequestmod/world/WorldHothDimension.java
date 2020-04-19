@@ -39,7 +39,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.ReportedException;
 import net.minecraft.util.EnumParticleTypes;
@@ -561,11 +560,6 @@ public class WorldHothDimension extends ElementsAdventureQuestMod.ModElement {
 				}
 				world.spawnParticle(EnumParticleTypes.PORTAL, px, py, pz, vx, vy, vz);
 			}
-			if (random.nextInt(110) == 0)
-				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-						(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-								.getObject(new ResourceLocation(("block.portal.ambient"))),
-						SoundCategory.BLOCKS, 0.5f, random.nextFloat() * 0.4F + 0.8F, false);
 		}
 
 		public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entityIn) {

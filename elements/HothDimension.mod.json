@@ -10,7 +10,7 @@
     },
     "portalLuminance": 0.0,
     "portalSound": {
-      "value": "block.portal.ambient"
+      "value": ""
     },
     "igniterName": "Hoth Dimension Portal Igniter",
     "igniterTab": {

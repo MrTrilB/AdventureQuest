@@ -29,10 +29,10 @@ public class ItemTrilbiumHoe extends ElementsAdventureQuestMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("TRILBIUMHOE", 21, 16280, 24f, 0f, 140)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("TRILBIUMHOE", 3, 16280, 2f, 1f, 140)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 21);
+				ret.put("hoe", 3);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("trilbiumhoe").setRegistryName("trilbiumhoe").setCreativeTab(TabAdventureQuest.tab));

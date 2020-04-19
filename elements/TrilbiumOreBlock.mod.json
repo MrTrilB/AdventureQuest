@@ -37,7 +37,7 @@
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "lightOpacity": 255,
     "material": {
       "value": "IRON"

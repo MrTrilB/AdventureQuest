@@ -12,13 +12,11 @@ import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.world.BossInfoServer;
-import net.minecraft.world.BossInfo;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
@@ -36,6 +34,7 @@ import net.minecraft.client.model.ModelCreeper;
 import net.mcreator.adventurequestmod.item.ItemTrilbiumIngot;
 import net.mcreator.adventurequestmod.ElementsAdventureQuestMod;
 
+import java.util.Random;
 import java.util.Iterator;
 import java.util.ArrayList;
 
@@ -57,7 +56,7 @@ public class EntityFoobaredCreeper extends ElementsAdventureQuestMod.ModElement 
 	@Override
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.MONSTER, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 10, 3, 30, EnumCreatureType.MONSTER, spawnBiomes);
 		DungeonHooks.addDungeonMob(new ResourceLocation("adventurequestmod:purplecreeper"), 180);
 	}
 
@@ -92,11 +91,11 @@ public class EntityFoobaredCreeper extends ElementsAdventureQuestMod.ModElement 
 		@Override
 		protected void initEntityAI() {
 			super.initEntityAI();
-			this.tasks.addTask(1, new EntityAIWander(this, 1));
+			this.tasks.addTask(1, new EntityAIWander(this, 0.1));
 			this.tasks.addTask(2, new EntityAILookIdle(this));
 			this.tasks.addTask(3, new EntityAISwimming(this));
 			this.tasks.addTask(4, new EntityAILeapAtTarget(this, (float) 0.8));
-			this.tasks.addTask(5, new EntityAIPanic(this, 1.2));
+			this.tasks.addTask(5, new EntityAIPanic(this, 0.2));
 			this.targetTasks.addTask(6, new EntityAIHurtByTarget(this, true));
 		}
 
@@ -150,27 +149,23 @@ public class EntityFoobaredCreeper extends ElementsAdventureQuestMod.ModElement 
 				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(15D);
 		}
 
-		@Override
-		public boolean isNonBoss() {
-			return false;
-		}
-		private final BossInfoServer bossInfo = new BossInfoServer(this.getDisplayName(), BossInfo.Color.PURPLE, BossInfo.Overlay.NOTCHED_10);
-		@Override
-		public void addTrackingPlayer(EntityPlayerMP player) {
-			super.addTrackingPlayer(player);
-			this.bossInfo.addPlayer(player);
-		}
-
-		@Override
-		public void removeTrackingPlayer(EntityPlayerMP player) {
-			super.removeTrackingPlayer(player);
-			this.bossInfo.removePlayer(player);
-		}
-
-		@Override
-		public void onUpdate() {
-			super.onUpdate();
-			this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());
+		public void onLivingUpdate() {
+			super.onLivingUpdate();
+			int i = (int) this.posX;
+			int j = (int) this.posY;
+			int k = (int) this.posZ;
+			Random random = this.rand;
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (i + random.nextFloat());
+					double d1 = (j + random.nextFloat());
+					double d2 = (k + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
+					world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, d0, d1, d2, d3, d4, d5);
+				}
 		}
 	}
 }
