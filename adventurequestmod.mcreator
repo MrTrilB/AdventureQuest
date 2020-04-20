@@ -690,6 +690,14 @@
         "0": 6,
         "1": 7
       }
+    },
+    {
+      "name": "OreDirectory",
+      "type": "tag",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],

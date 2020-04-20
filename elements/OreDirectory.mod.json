@@ -1,0 +1,52 @@
+{
+  "_fv": 6,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TrilbiumOre"
+      },
+      {
+        "value": "CUSTOM:FlardOre"
+      },
+      {
+        "value": "CUSTOM:EnderiumOre"
+      },
+      {
+        "value": "CUSTOM:TrilbiumOreBlock"
+      },
+      {
+        "value": "CUSTOM:TrilbiumIngot"
+      },
+      {
+        "value": "CUSTOM:FlardOreBlock"
+      },
+      {
+        "value": "CUSTOM:FlardOreBlock"
+      },
+      {
+        "value": "CUSTOM:FlardIngot"
+      },
+      {
+        "value": "CUSTOM:EnderiumOreBlock"
+      },
+      {
+        "value": "CUSTOM:EnderiumDust"
+      },
+      {
+        "value": "CUSTOM:EnderiumIngot"
+      },
+      {
+        "value": "CUSTOM:TrilbiumDust"
+      },
+      {
+        "value": "CUSTOM:FlardOreDust"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "oredirectory",
+    "namespace": "forge"
+  }
+}
