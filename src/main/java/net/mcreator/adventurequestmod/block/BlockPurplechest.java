@@ -11,7 +11,9 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.Mirror;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumBlockRenderType;
@@ -28,11 +30,15 @@ import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
 import net.mcreator.adventurequestmod.gui.GuiTrilFlardChestGUI;
@@ -41,41 +47,74 @@ import net.mcreator.adventurequestmod.ElementsAdventureQuestMod;
 import net.mcreator.adventurequestmod.AdventureQuestMod;
 
 @ElementsAdventureQuestMod.ModElement.Tag
-public class BlockTrilBiumandFlardChest extends ElementsAdventureQuestMod.ModElement {
-	@GameRegistry.ObjectHolder("adventurequestmod:trilbiumandflardchest")
+public class BlockPurplechest extends ElementsAdventureQuestMod.ModElement {
+	@GameRegistry.ObjectHolder("adventurequestmod:purplechest")
 	public static final Block block = null;
-	public BlockTrilBiumandFlardChest(ElementsAdventureQuestMod instance) {
-		super(instance, 80);
+	public BlockPurplechest(ElementsAdventureQuestMod instance) {
+		super(instance, 85);
 	}
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockCustom().setRegistryName("trilbiumandflardchest"));
+		elements.blocks.add(() -> new BlockCustom().setRegistryName("purplechest"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.registerTileEntity(TileEntityCustom.class, "adventurequestmod:tileentitytrilbiumandflardchest");
+		GameRegistry.registerTileEntity(TileEntityCustom.class, "adventurequestmod:tileentitypurplechest");
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
-				new ModelResourceLocation("adventurequestmod:trilbiumandflardchest", "inventory"));
+				new ModelResourceLocation("adventurequestmod:purplechest", "inventory"));
 	}
 	public static class BlockCustom extends Block implements ITileEntityProvider {
+		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 		public BlockCustom() {
 			super(Material.IRON);
-			setUnlocalizedName("trilbiumandflardchest");
+			setUnlocalizedName("purplechest");
 			setSoundType(SoundType.METAL);
 			setHarvestLevel("pickaxe", 3);
 			setHardness(3F);
-			setResistance(22F);
+			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
 			setCreativeTab(TabAdventureQuest.tab);
+			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		}
+
+		@Override
+		protected net.minecraft.block.state.BlockStateContainer createBlockState() {
+			return new net.minecraft.block.state.BlockStateContainer(this, new IProperty[]{FACING});
+		}
+
+		@Override
+		public IBlockState withRotation(IBlockState state, Rotation rot) {
+			return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
+		}
+
+		@Override
+		public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
+			return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
+		}
+
+		@Override
+		public IBlockState getStateFromMeta(int meta) {
+			return this.getDefaultState().withProperty(FACING, EnumFacing.getFront(meta));
+		}
+
+		@Override
+		public int getMetaFromState(IBlockState state) {
+			return ((EnumFacing) state.getValue(FACING)).getIndex();
+		}
+
+		@Override
+		public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
+				EntityLivingBase placer) {
+			return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
 		}
 
 		@Override
@@ -174,7 +213,7 @@ public class BlockTrilBiumandFlardChest extends ElementsAdventureQuestMod.ModEle
 
 		@Override
 		public String getName() {
-			return "container.trilbiumandflardchest";
+			return "container.purplechest";
 		}
 
 		@Override
@@ -220,7 +259,7 @@ public class BlockTrilBiumandFlardChest extends ElementsAdventureQuestMod.ModEle
 
 		@Override
 		public String getGuiID() {
-			return "adventurequestmod:trilbiumandflardchest";
+			return "adventurequestmod:purplechest";
 		}
 
 		@Override

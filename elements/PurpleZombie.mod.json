@@ -2,31 +2,31 @@
   "_fv": 6,
   "_type": "mob",
   "definition": {
-    "mobName": "Purple Creeper",
+    "mobName": "Purple Zombie",
     "mobLabel": "",
-    "mobModelTexture": "urple_reeper.png",
-    "mobModelName": "Creeper",
+    "mobModelTexture": "purplezombie.png",
+    "mobModelName": "Modelpurplezombie",
     "modelWidth": 0.6,
-    "modelHeight": 1.7,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "armorBaseValue": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -6749953,
+      "value": -6750055,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -13434829,
+      "value": -16711885,
       "falpha": 0.0
     },
     "creativeTab": {
       "value": "CUSTOM:AdventureQuest"
     },
     "isBoss": false,
-    "bossBarColor": "PURPLE",
-    "bossBarType": "NOTCHED_10",
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:TrilbiumSword"
     },
     "equipmentOffHand": {
       "value": ""
@@ -45,11 +45,11 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 15,
-    "movementSpeed": 2.0,
+    "attackStrength": 3,
+    "movementSpeed": 0.3,
     "trackingRange": 64,
-    "health": 20,
-    "xpAmount": 30,
+    "health": 10,
+    "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
     "disableCollisions": false,
@@ -58,23 +58,23 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "CUSTOM:TrilbiumIngot"
-    },
-    "livingSound": {
       "value": ""
     },
+    "livingSound": {
+      "value": "entity.zombie.ambient"
+    },
     "hurtSound": {
-      "value": "entity.creeper.hurt"
+      "value": "entity.zombie.hurt"
     },
     "deathSound": {
-      "value": "entity.creeper.death"
+      "value": "entity.zombie.death"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -85,8 +85,8 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasAI": true,
-    "aiBase": "Creeper",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">0.1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">0.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "breedTriggerItems": [],
     "ranged": false,
@@ -95,11 +95,11 @@
     },
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 3,
     "maxNumberOfMobsPerGroup": 30,
     "restrictionBiomes": [],
-    "spawnInDungeons": true
+    "spawnInDungeons": false
   }
 }

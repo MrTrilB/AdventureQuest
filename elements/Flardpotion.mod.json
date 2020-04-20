@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "potion",
+  "definition": {
+    "name": "Flardpotion",
+    "effectName": "Flardpotion",
+    "icon": "redstone-flux.png",
+    "color": {
+      "value": -13369549,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "curativeItems": [
+      {
+        "value": "CUSTOM:TrilbiumDust"
+      }
+    ],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

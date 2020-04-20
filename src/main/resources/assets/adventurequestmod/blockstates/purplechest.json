@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "adventurequestmod:purplechest"
+    },
+    "facing=north": {
+      "model": "adventurequestmod:purplechest"
+    },
+    "facing=east": {
+      "model": "adventurequestmod:purplechest",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "adventurequestmod:purplechest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "adventurequestmod:purplechest",
+      "y": 270
+    }
+  }
+}

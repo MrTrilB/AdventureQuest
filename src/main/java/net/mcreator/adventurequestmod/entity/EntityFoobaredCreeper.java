@@ -13,7 +13,6 @@ import net.minecraftforge.common.DungeonHooks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -34,7 +33,6 @@ import net.minecraft.client.model.ModelCreeper;
 import net.mcreator.adventurequestmod.item.ItemTrilbiumIngot;
 import net.mcreator.adventurequestmod.ElementsAdventureQuestMod;
 
-import java.util.Random;
 import java.util.Iterator;
 import java.util.ArrayList;
 
@@ -50,7 +48,7 @@ public class EntityFoobaredCreeper extends ElementsAdventureQuestMod.ModElement 
 	public void initElements() {
 		elements.entities.add(
 				() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("adventurequestmod", "purplecreeper"), ENTITYID)
-						.name("purplecreeper").tracker(64, 3, true).egg(-10092391, -6749953).build());
+						.name("purplecreeper").tracker(64, 3, true).egg(-6749953, -13434829).build());
 	}
 
 	@Override
@@ -147,25 +145,6 @@ public class EntityFoobaredCreeper extends ElementsAdventureQuestMod.ModElement 
 				this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20D);
 			if (this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
 				this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(15D);
-		}
-
-		public void onLivingUpdate() {
-			super.onLivingUpdate();
-			int i = (int) this.posX;
-			int j = (int) this.posY;
-			int k = (int) this.posZ;
-			Random random = this.rand;
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (i + random.nextFloat());
-					double d1 = (j + random.nextFloat());
-					double d2 = (k + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
-					world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, d0, d1, d2, d3, d4, d5);
-				}
 		}
 	}
 }
