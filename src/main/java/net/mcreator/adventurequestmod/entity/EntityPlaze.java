@@ -19,6 +19,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.PathNavigateFlying;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.init.Items;
+import net.minecraft.entity.projectile.EntityTippedArrow;
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.ai.EntityFlyHelper;
 import net.minecraft.entity.ai.EntityAIWander;
@@ -27,14 +29,19 @@ import net.minecraft.entity.ai.EntityAIPanic;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAILeapAtTarget;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
+import net.minecraft.entity.ai.EntityAIAttackRanged;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.entity.RenderSnowball;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.adventurequestmod.item.ItemTrilionAlloyRod;
@@ -57,6 +64,9 @@ public class EntityPlaze extends ElementsAdventureQuestMod.ModElement {
 		elements.entities
 				.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class).id(new ResourceLocation("adventurequestmod", "plaze"), ENTITYID)
 						.name("plaze").tracker(64, 3, true).egg(-10092391, -6749953).build());
+		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityArrowCustom.class)
+				.id(new ResourceLocation("adventurequestmod", "entitybulletplaze"), ENTITYID_RANGED).name("entitybulletplaze").tracker(64, 1, true)
+				.build());
 	}
 
 	@Override
@@ -83,8 +93,15 @@ public class EntityPlaze extends ElementsAdventureQuestMod.ModElement {
 				}
 			};
 		});
+		RenderingRegistry.registerEntityRenderingHandler(EntityArrowCustom.class, renderManager -> {
+			return new RenderSnowball<EntityArrowCustom>(renderManager, null, Minecraft.getMinecraft().getRenderItem()) {
+				public ItemStack getStackToRender(EntityArrowCustom entity) {
+					return new ItemStack(Items.FIRE_CHARGE, (int) (1));
+				}
+			};
+		});
 	}
-	public static class EntityCustom extends EntityBlaze {
+	public static class EntityCustom extends EntityBlaze implements IRangedAttackMob {
 		public EntityCustom(World world) {
 			super(world);
 			setSize(0.6f, 1.8f);
@@ -104,6 +121,7 @@ public class EntityPlaze extends ElementsAdventureQuestMod.ModElement {
 			this.tasks.addTask(4, new EntityAILeapAtTarget(this, (float) 0.8));
 			this.tasks.addTask(5, new EntityAIPanic(this, 1.2));
 			this.targetTasks.addTask(6, new EntityAIHurtByTarget(this, false));
+			this.tasks.addTask(1, new EntityAIAttackRanged(this, 1.25D, 20, 10.0F));
 		}
 
 		@Override
@@ -156,6 +174,19 @@ public class EntityPlaze extends ElementsAdventureQuestMod.ModElement {
 		}
 
 		@Override
+		public void setSwingingArms(boolean swingingArms) {
+		}
+
+		public void attackEntityWithRangedAttack(EntityLivingBase target, float flval) {
+			EntityArrowCustom entityarrow = new EntityArrowCustom(this.world, this);
+			double d0 = target.posY + (double) target.getEyeHeight() - 1.1;
+			double d1 = target.posX - this.posX;
+			double d3 = target.posZ - this.posZ;
+			entityarrow.shoot(d1, d0 - entityarrow.posY + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+			this.world.spawnEntity(entityarrow);
+		}
+
+		@Override
 		public void onUpdate() {
 			super.onUpdate();
 			this.setNoGravity(true);
@@ -183,6 +214,20 @@ public class EntityPlaze extends ElementsAdventureQuestMod.ModElement {
 					double d2 = (k + 0.5) + (random.nextFloat() - 0.5) * 0.5D * 20;
 					world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1, d2, 0, 0, 0);
 				}
+		}
+	}
+
+	public static class EntityArrowCustom extends EntityTippedArrow {
+		public EntityArrowCustom(World a) {
+			super(a);
+		}
+
+		public EntityArrowCustom(World worldIn, double x, double y, double z) {
+			super(worldIn, x, y, z);
+		}
+
+		public EntityArrowCustom(World worldIn, EntityLivingBase shooter) {
+			super(worldIn, shooter);
 		}
 	}
 

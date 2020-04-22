@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "ENTITY": 7,
-    "DIMENSION": 2,
-    "GUI": 1
+    "ENTITY": 9,
+    "GUI": 1,
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -698,6 +698,17 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "PurpleSpider",
+      "type": "mob",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 8,
+        "1": 9
+      }
     }
   ],
   "variable_elements": [],
@@ -708,18 +719,19 @@
       "tipped_arrow.effect.flardpotion": "Arrow of Flardpotion",
       "item.trilionalloyrod.name": "Trilion Alloy Rod",
       "item.trilbiumingot.name": "Trilbium",
+      "entity.purplespider.name": "Purple Spider",
       "item.trilbiumshovel.name": "Trilbium Shovel",
       "item.enderiumtoolssword.name": "EnderiumTools Sword",
       "tile.flardore.name": "Flard Ore",
-      "tile.flardoreblock.name": "Block of Flard",
       "item.flardsword.name": "Flard Sword",
+      "tile.flardoreblock.name": "Block of Flard",
       "item.trilbiumarmorhelmet.name": "Trilbium Helmet",
-      "item.flardarmorhelmet.name": "Flard Helmet",
       "item.trilbiumbow.name": "Trilbium Bow",
+      "item.flardarmorhelmet.name": "Flard Helmet",
       "tile.trilbiumoreblock.name": "Block of Trilbium",
       "item.trilbiumsword.name": "Trilbium Sword",
-      "item.flardarmorboots.name": "Flard Boots",
       "item.trilbiumhoe.name": "Trilbium Hoe",
+      "item.flardarmorboots.name": "Flard Boots",
       "item.enderiumtoolsshovel.name": "EnderiumTools Shovel",
       "item.flardaxe.name": "Flard Axe",
       "item.flardhoe.name": "Flard Hoe",
@@ -762,18 +774,19 @@
       "tipped_arrow.effect.flardpotion": "Arrow of Flardpotion",
       "item.trilionalloyrod.name": "Trilion Alloy Rod",
       "item.trilbiumingot.name": "Trilbium Ingot",
+      "entity.purplespider.name": "Purple Spider",
       "item.trilbiumshovel.name": "Trilbium Shovel",
       "item.enderiumtoolssword.name": "Enderium Sword",
       "tile.flardore.name": "Flard Ore",
-      "tile.flardoreblock.name": "Block of Flard",
       "item.flardsword.name": "Flard Sword",
+      "tile.flardoreblock.name": "Block of Flard",
       "item.trilbiumarmorhelmet.name": "Trilbium Helmet",
-      "item.flardarmorhelmet.name": "Flard Helmet",
       "item.trilbiumbow.name": "Trilbium Bow",
+      "item.flardarmorhelmet.name": "Flard Helmet",
       "tile.trilbiumoreblock.name": "Block of Trilbium",
       "item.trilbiumsword.name": "Trilbium Sword",
-      "item.flardarmorboots.name": "Flard Boots",
       "item.trilbiumhoe.name": "Trilbium Hoe",
+      "item.flardarmorboots.name": "Flard Boots",
       "item.enderiumtoolsshovel.name": "Enderium Shovel",
       "item.flardaxe.name": "Flard Axe",
       "item.flardhoe.name": "Flard Hoe",
