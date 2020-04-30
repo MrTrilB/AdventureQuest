@@ -120,7 +120,7 @@ public class BlockFlardOre extends ElementsAdventureQuestMod.ModElement {
 			setUnlocalizedName("flardore");
 			setSoundType(SoundType.STONE);
 			setHarvestLevel("pickaxe", 3);
-			setHardness(24F);
+			setHardness(3F);
 			setResistance(6F);
 			setLightLevel(0F);
 			setLightOpacity(255);

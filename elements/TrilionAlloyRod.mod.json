@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Trilion Alloy Rod",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:AdventureQuest"
     },
     "stackSize": 64,
     "enchantability": 0,

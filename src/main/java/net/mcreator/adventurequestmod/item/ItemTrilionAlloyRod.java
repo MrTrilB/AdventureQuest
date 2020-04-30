@@ -9,10 +9,10 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.adventurequestmod.creativetab.TabAdventureQuest;
 import net.mcreator.adventurequestmod.ElementsAdventureQuestMod;
 
 @ElementsAdventureQuestMod.ModElement.Tag
@@ -39,7 +39,7 @@ public class ItemTrilionAlloyRod extends ElementsAdventureQuestMod.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("trilionalloyrod");
 			setRegistryName("trilionalloyrod");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(TabAdventureQuest.tab);
 		}
 
 		@Override
