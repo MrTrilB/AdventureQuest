@@ -102,7 +102,7 @@ public class EntityPurpleZombie extends ElementsAdventureQuestMod.ModElement {
 
 		@Override
 		public EnumCreatureAttribute getCreatureAttribute() {
-			return EnumCreatureAttribute.UNDEFINED;
+			return EnumCreatureAttribute.UNDEAD;
 		}
 
 		@Override

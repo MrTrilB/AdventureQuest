@@ -44,7 +44,7 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
+    "mobCreatureType": "UNDEAD",
     "attackStrength": 3,
     "movementSpeed": 0.3,
     "trackingRange": 64,
